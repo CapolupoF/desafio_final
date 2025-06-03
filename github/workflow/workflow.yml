@@ -44,7 +44,7 @@ jobs:
 
   deploy:
     needs: test
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' 
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -52,3 +52,5 @@ jobs:
       
       - name: aaa
         run: curl -X POST https://desafio-final-tai9.onrender.com
+
+        
