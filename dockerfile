@@ -10,4 +10,4 @@ COPY . .
 # Expor a porta 1313
 EXPOSE 1313
 
-CMD ["python", "app.py"]
+CMD ["python3", "app.py"]
