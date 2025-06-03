@@ -10,4 +10,4 @@ COPY . .
 # Expor a porta 1313
 EXPOSE 1313
 
-CMD ["python3", "app.py"]
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:1313"]
